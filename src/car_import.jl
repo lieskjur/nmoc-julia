@@ -13,5 +13,5 @@ end)
 JuMP.optimize!(model)
 
 println("x = ", value.(x))
-println("c'x = ", objective_value(model))
+println("f(x) = ", objective_value(model))
 
